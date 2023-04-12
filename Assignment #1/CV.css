@@ -1,0 +1,129 @@
+body{   
+    width: 100vw;
+    height: 100vh;
+    padding-left: 4%;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.main{
+width: 90%;
+height: 40vh;
+background-color: black;
+display: flex;
+flex-direction: row;
+}
+
+.info{
+width: 50%;
+height: 100%;
+background-color: gray;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-style: italic;
+
+}
+.info1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12px;
+    align-items: center;
+}
+
+.inner_info1{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner_info2{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner_info3{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner_info4{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile_photo{
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+
+.footer{
+    width: 90%;
+    height: 55vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+
+    
+}
+
+.objectives{
+width: 30%;
+height: 95%;    
+background-color: gray;
+border-radius: 20px;
+padding: 5px;
+}
+
+.education{
+    width: 30%;
+    height: 95%;    
+    background-color: gray;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.skills{
+    width: 30%;
+    height: 95%;    
+    background-color: gray;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.footer>div>h2{
+    font-style: italic;
+}
