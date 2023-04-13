@@ -1,0 +1,129 @@
+.bmain{
+    background-color: white;
+}
+
+.ad-bar{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+}
+
+.nvb{
+    display: flex;
+    position:sticky;
+}
+
+.div-ul{
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+.nav_ul{
+    display: inline;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.logo{
+    justify-content: center;
+}
+/* .nav_ul>div>h3{
+    margin: 28px;
+    padding: 20px;
+    margin-left: 500px;
+} */
+
+.nav_il{
+    float: left;
+}
+  
+.nav_a{
+    margin: 28px;
+    color: black;
+    text-align: center;   
+    padding: 2px;
+    text-decoration: none;
+}
+
+.img_div{
+    display: flex;
+    height: 555px;
+    background-color: white;
+}
+.main_img{
+    justify-content: center;
+    align-items:center;
+}
+
+.img_div2{
+    display: flex;
+    height: 625px;
+    background-color: white;
+}
+.left_img{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.right_img{
+    justify-content: center;
+    align-items: center;
+}
+
+.img_div3{
+    display: flex;
+    height: 690px;
+    background-color: white;
+}
+
+.h_tags{
+    display: flex;
+
+    background-color: white;
+}
+
+#f_tags{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    margin-left: 600px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1{
+    margin: 30px;
+    border-radius: 5px;
+    background-color:white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.innercard1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.incard{
+    margin: 20px;    
+}
+
+.foot{
+    display: flex;
+}
+
+.email{
+    justify-content: center;
+}
+
+
