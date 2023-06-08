@@ -3,12 +3,6 @@ const mongoose = require("mongoose");
 const router = express.Router();
 const Disease = require("../models/diseases");
 
-router.get("/", async (req, res) => {
-  const disease = await Disease.find();
-
-  return res.render("list", { disease });
-});
-
 router.post("/", async (req, res) => {
   let diseases = new disease(req.body);
   let disease = new disease({
@@ -18,6 +12,12 @@ router.post("/", async (req, res) => {
   });
   disease = await Disease.save();
   res.render(list);
+});
+
+router.get("/", async (req, res) => {
+  const disease = await Disease.find();
+
+  return res.render("list", { disease });
 });
 
 router.put("/:id", async (req, res) => {
