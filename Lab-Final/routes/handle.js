@@ -26,7 +26,7 @@ router.put("/:id", async (req, res) => {
     causes: req.body.causes,
     symptoms: req.body.symptoms,
   });
-  res.render(disease);
+  res.render(list);
 });
 
 router.delete("/:id", async (req, res) => {
