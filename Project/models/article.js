@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 
-const UserSchema = mongoose.Schema({
+const ArticleSchema = mongoose.Schema({
   title: String,
   description: String,
+  image: String,
 });
 
 const Article = mongoose.model("article", ArticleSchema);

@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="container-fluid w-50">
+        <form class="form" method="POST" action="/api/edit">
+            <div class="form-group mb-3 w-25">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title"
+                    value="<%=  article.title %>" />
+            </div>
+            <div class="form-group mb-3 w-25" id="box_field">
+                <label for="description" class="form-label">Description: </label>
+                <textarea class="form-control" id="description" name="description" rows="5" placeholder="description"
+                    value="<%=  article.description %>"></textarea>
+            </div>
+
+            <button type=" submit" class="btn btn-primary mt-3">edit</button>
+        </form>
+    </div>
+</div>
