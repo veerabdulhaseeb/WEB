@@ -1,0 +1,133 @@
+<div class="card1">
+  <div class="divhead">
+    <h2 class="headings">Top Stories</h2>
+  </div>
+  <div class="innercard1">
+    <div class="card mb-3 w-25 incard">
+      <img src="smp2.jpg  " class="card-img-top imgsz" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Black Lives Matter!</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+    <div class="card mb-3 w-25 incard">
+      <img src="smp2.jpg  " class="card-img-top imgsz" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Black Lives Matter!</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+    <div class="card mb-3 w-25 incard">
+      <img src="smp2.jpg  " class="card-img-top imgsz" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Black Lives Matter!</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <link rel="stylesheet" href="/css/HireTutor.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <div class="front">
+    <img src="/images/a.png" alt="image" />
+    <h1>Welcome to our Tutor Finder App!</h1>
+    <p>Find the perfect tutor for your learning needs.</p>
+    <!-- <div class="w-50 text-light bg-primary" id="l">
+    <h2 class="animate__heartBeat">Learn</h2>
+    <h2 class="animate__heartBeat">From highly</h2>
+    <h2 class="animate__heartBeat">Qualified teachers</h2>
+  </div>
+  <div class="w-50" id="r">
+    <a href="#"><p>Explore</p></a>
+  </div> -->
+  </div>
+
+  <div id="book container-fluid">
+    <a class="btn btn-primary" href="/api/tutors/addTutor">Add Tutor</a>
+    <div class="tutors container-fluid d-flex flex-wrap justify-content-center">
+      <!-- <div class="card" style="width: 18rem">
+      <img src="/images/profile-pic.png" class="card-img-top" alt="pic" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <img src="/images/profile-pic.png" class="card-img-top" alt="pic" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <img src="/images/profile-pic.png" class="card-img-top" alt="pic" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+      <% tutors.forEach(tutor=> { %>
+        <div class="card" style="width: 18rem">
+          <img id="image" src="<%= tutor.image %>" class="card-img-top" alt="pic" />
+          <div class="card-body">
+            <h5 class="card-title"><b>
+                <%= tutor.name %>
+              </b></h5>
+            <p class="card-text">
+              <%= tutor.email %>
+            </p>
+            <p id="sub" class="card-text">
+              <%= tutor.subject1 %> | <%= tutor.subject2 %>
+            </p>
+            <p class="card-text">
+              <%= tutor.bio %>
+            </p>
+            <a href="/api/tutors/details" class="btn btn-primary">Details</a>
+            <a href="/api/tutors/editTutor/<%= tutor._id%>" class="btn btn-primary">Edit</a>
+            <a href="/api/tutors/deleteTutor/<%= tutor._id%>" class="btn btn-danger">Delete</a>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+    <div class="pagination justify-content-center">
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
